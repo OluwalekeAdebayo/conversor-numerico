@@ -1,0 +1,15 @@
+print('Ola bem vindo(a) para o melhor app de conversão numerica!')
+num = int(input('Por favor digite o numero que deseja converter: '))
+print('''Escolha umas das bases para conversão:
+[1]  BINARIO
+[2]  OCTAL
+[3]  HEXADECIMAL''')
+opçao = int(input('Qual sua opção?: '))
+if opçao == 1:
+  print('{} convertido para BINARIO é igual a {}'.format(num, bin(num)[2:]))
+elif opçao == 2:
+  print('{} convertido a OCTAL é igual a {}'.format(num, oct(num)[2:]))
+elif opçao == 3:
+  print('{} convertido em HEXADECIMAL é igual a {}'.format(num, hex(num)[2:]))
+else:
+  print('Hmm pelo visto você escolheu um opçãõ invalida!')
